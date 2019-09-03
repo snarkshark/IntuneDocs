@@ -220,7 +220,7 @@ To see if the device is auto-enrolled, you can:
     $PSFolder = "C:\Windows\SysWOW64\WindowsPowerShell\v1.0"
     $AgentExec = "C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe"
     &$AgentExec -powershell  $scriptPath $outputPath $errorPath $timeoutPath $timeoutVal $PSFolder 0 0
-```
+    ```
 
 ## Next steps
 
