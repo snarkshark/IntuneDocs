@@ -200,7 +200,9 @@ To see if the device is auto-enrolled, you can:
 
     `psexec -i -s`
   
-  - If script execution reports a success but the outcome isn't happening (for instance, the script above doesn't create a file), the antivirus might be sandboxing AgentExecutor. The following script should always report a failure in Intune - if it reports a success, look at AgentExecutor.log to confirm the error output - the length should be >2 if the script is executing at all:
+  - If script execution reports a success but the outcome isn't happening (for instance, the script above doesn't create a file), the antivirus might be sandboxing AgentExecutor. 
+  
+  - The following script should always report a failure in Intune - if it reports a success, look at AgentExecutor.log to confirm the error output - the length should be >2 if the script is executing at all:
 
     ```powershell
     Write-Error -Message "Forced Fail" -Category OperationStopped
